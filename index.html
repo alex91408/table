@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {font-family: Helvetica Neue, Arial, sans-serif; }
+
+body { background-image: linear-gradient(rgb(247, 178, 178) 25%, #000);
+background-size: 500px 1000px;}
+
+h1, table { text-align: center;  }
+
+table {border-collapse: collapse;  width: 70%; margin: 0 auto 5rem;}
+
+th, td { padding: 1.5rem; font-size: 1.3rem; }
+
+tr {background: hsl(48, 46%, 89%); }
+
+tr, td { transition: .4s ease-in; } 
+
+tr:first-child {background: hsla(276, 100%, 49%, 0.5); }
+
+tr:nth-child(even) { background: hsla(49, 86%, 60%, 0.7); }
+
+
+
+tr:hover:not(#firstrow), tr:hover td:empty {background: #ff0; pointer-events: visible;}
+tr:hover:not(#firstrow) { transform: scale(1.2); font-weight: 700; box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);}
+    </style>
+</head>
+<body>
+    <h1 alr>火車時刻表</h1>
+
+<table id="racetimes">
+<tr id="firstrow"><th>車種車次</th><th>地點</th><th>票價</th><th>行駛時間</th></tr>
+<tr><td>自強103 </td><td>台北</td><td>50</td><td>10分</td></tr>
+<tr><td>自強105 </td><td>台中</td><td>150</td><td>20分</td></tr>
+<tr><td>莒光507</td><td>彰化</td><td>200</td><td>40分</td></tr>
+<tr><td>普悠瑪422 </td><td>雲林</td><td>300</td><td>30分</td></tr>
+<tr><td>自強121 </td><td>台東</td><td>150</td><td>50分</td></tr>
+<tr><td>莒光511</td><td>嘉義</td><td>100</td><td>40分</td></tr>
+<tr><td>普悠瑪486</td><td>高雄</td><td>800</td><td>90分</td></tr>
+</table>
+</body>
+</html>
